@@ -1,0 +1,5 @@
+# Ignoriraj node_modules
+node_modules/
+
+# Ignoriraj VS Code postavke (opcionalno)
+.vscode/
