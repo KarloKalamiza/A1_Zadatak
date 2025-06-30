@@ -33,10 +33,19 @@ function App() {
   );
 
 return (
-  <div style={{ textAlign: 'center', padding: '2rem' }}>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          padding: '2rem',
+          minHeight: '100vh',
+          boxSizing: 'border-box',
+        }}
+      >
       <h1>Pregled cijena proizvoda</h1>
 
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '800px', width: '100%', margin: '0 auto' }}>
         {error ? (
           <div style={{ color: 'red', fontWeight: 'bold' }}>{error}</div>
         ) : (

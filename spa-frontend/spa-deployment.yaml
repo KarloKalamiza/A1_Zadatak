@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spa-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spa
+  template:
+    metadata:
+      labels:
+        app: spa
+    spec:
+      containers:
+        - name: spa
+          image: spa-frontend:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
