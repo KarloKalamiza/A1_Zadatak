@@ -1,6 +1,6 @@
 # SPA i Webserver projekt
 
-Projekt je sastavljen od dva dijela: SPA web aplikacija te webserver. Webserver sadrži index.html te halthz.json te Dockerfile i yaml fileove za deployment. SPA aplikacija razvijena je koristeći React framework te dohvaća proizvoda sa vanjog API-ja https://dummyjson.com/products te korisniku prikazuje 10 random proizvoda. Random shuffle ostvaren je korištenjem Fisher–Yates algoritma.
+Projekt je sastavljen od dva dijela: SPA web aplikacija te webserver. Webserver sadrži index.html te halthz.json te Dockerfile i yaml fileove za deployment. SPA aplikacija razvijena je koristeći React framework te dohvaća proizvoda sa vanjog API-ja https://dummyjson.com/products te korisniku prikazuje 10 random proizvoda. Random shuffle ostvaren je korištenjem Fisher–Yates algoritma. Stranica je responzivna te prilagođena različitim veličinama ekrana. Ukoliko se podaci ne dohvate ili korisnik nije povezan s internetom, ispisati će se greška. Budući da može biti velika razlika u cijenama među proizvodima, nekada se proizvodima sa jako malim cijenama teško vidljivi na grafu, to je riješeno implementirarjući zoom in i zoom out opciju kako bi se lakše snalazili.
 
 ## Authors
 
